@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Manager Program - Brochure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B2027',
+                        gold: '#C5A880',
+                        slate: '#4A4A4A',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ensures print formatting keeps panels separate */
+        @media print {
+            .panel { page-break-after: always; height: 100vh; }
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+        .panel { min-height: 100vh; display: flex; flex-direction: column; }
+        
+        /* Background overlays */
+        .bg-cover-panel {
+            background-image: linear-gradient(to bottom, rgba(11, 32, 39, 0.8), rgba(11, 32, 39, 0.95)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(20%);
+        }
+        .bg-journey-panel {
+            background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate bg-gray-100">
+
+    <!-- PANEL 1: COVER -->
+    <section class="panel bg-cover-panel text-white relative shadow-xl mb-8 mx-auto max-w-4xl overflow-hidden">
+        <div class="absolute inset-0 bg-navy opacity-50 mix-blend-multiply"></div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center p-12">
+            <!-- Geometric Gold Line -->
+            <div class="w-24 h-1 bg-gold mb-8 transform -rotate-45"></div>
+            
+            <h3 class="text-gold tracking-[0.2em] uppercase text-sm font-semibold mb-4">Fountaincove Sdn Bhd Presents</h3>
+            <h1 class="font-serif text-6xl md:text-7xl font-bold leading-tight mb-6">
+                THE GREAT <br> MANAGER <br> PROGRAM
+            </h1>
+            <div class="w-16 h-1 bg-gold mb-6"></div>
+            <h2 class="text-2xl md:text-3xl font-light italic text-gray-200">Built to Lead.</h2>
+            <p class="mt-4 text-lg md:text-xl font-light tracking-wide">Delivering business success through leadership.</p>
+        </div>
+    </section>
+
+    <!-- PANEL 2: THE PROBLEM & SOLUTION -->
+    <section class="panel bg-white shadow-xl mb-8 mx-auto max-w-4xl p-12 lg:p-16">
+        <div class="max-w-3xl mx-auto">
+            <p class="text-xl leading-relaxed text-navy font-medium mb-10 border-l-4 border-gold pl-6">
+                Capable leaders create clarity on what matters, hold focus on the priorities, and build the capability to execute and multiply through their teams. A seven-week program for new and emerging managers, built through their real work.
+            </p>
+
+            <!-- Quick Stats -->
+            <div class="flex flex-wrap justify-between items-center bg-gray-50 p-6 rounded-lg mb-12 border border-gray-100">
+                <div class="text-center px-4"><span class="block text-2xl font-serif text-navy font-bold">7</span><span class="text-xs uppercase tracking-wider text-slate">Weeks</span></div>
+                <div class="text-center px-4"><span class="block text-2xl font-serif text-navy font-bold">12</span><span class="text-xs uppercase tracking-wider text-slate">Cohort Size</span></div>
+                <div class="text-center px-4"><span class="block text-sm font-semibold text-navy">Blended or Virtual</span><span class="text-xs uppercase tracking-wider text-slate">Format</span></div>
+                <div class="text-center px-4"><span class="block text-sm font-semibold text-navy">HRD Corp</span><span class="text-xs uppercase tracking-wider text-slate">Claimable</span></div>
+            </div>
+
+            <!-- Three Pillars -->
+            <h2 class="font-serif text-3xl text-navy font-bold text-center mb-8">Three Pillars of a Manager</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Pillar 1 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto border-2 border-gold rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="font-serif font-bold text-navy text-xl mb-2">Functional</h3>
+                    <p class="text-sm text-slate">Takes the lead on their responsibilities. Accountable, and delegates with confidence.</p>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto border-2 border-gold rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    </div>
+                    <h3 class="font-serif font-bold text-navy text-xl mb-2">Operational</h3>
+                    <p class="text-sm text-slate">Runs the operation with a steady rhythm. Priorities clear, commitments tracked, problems dealt with early.</p>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto border-2 border-gold rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="font-serif font-bold text-navy text-xl mb-2">Effective</h3>
+                    <p class="text-sm text-slate">Delivers the results the business is counting on, through the team, consistently.</p>
+                </div>
+            </div>
+
+            <hr class="border-gray-200 mb-10">
+
+            <!-- Contract & Quote -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h3 class="font-serif text-2xl text-navy font-bold mb-4">What we contract on</h3>
+                    <p class="text-sm text-slate mb-4">We measure behaviour through their plans. Behaviour is what a manager does differently. It is baselined before the program, observed at 90 days, and verified by the person they report to.</p>
+                    <p class="text-sm text-slate">Leadership reaches business performance through the decisions a manager makes and the way they operate with their team.</p>
+                </div>
+                <div class="bg-navy text-white p-8 rounded-tr-3xl rounded-bl-3xl shadow-lg relative">
+                    <div class="absolute -top-4 -left-4 text-6xl text-gold opacity-50 font-serif">"</div>
+                    <p class="text-sm font-light leading-relaxed italic relative z-10">
+                        Your managers will lead differently. You will see it first in their plans and their decisions: work that is thought through, initiative where they used to wait, and a team that follows because they want to. Then you will see it in the numbers you already watch.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PANEL 3: THE JOURNEY -->
+    <section class="panel bg-journey-panel relative shadow-xl mb-8 mx-auto max-w-4xl">
+        <div class="absolute inset-0 bg-white opacity-95"></div>
+        <div class="relative z-10 p-12 lg:p-16 h-full flex flex-col justify-center">
+            
+            <h2 class="font-serif text-3xl text-navy font-bold text-center mb-8">The Transformation</h2>
+            
+            <!-- Table -->
+            <div class="overflow-x-auto shadow-sm ring-1 ring-black ring-opacity-5 mb-12">
+                <table class="min-w-full divide-y divide-gray-300 bg-white">
+                    <thead class="bg-navy text-white">
+                        <tr>
+                            <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold uppercase tracking-wide">Week</th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold uppercase tracking-wide">Foundation</th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold uppercase tracking-wide">What This Builds</th>
+                        </tr>
+                    </thead>
+                    <tdbody class="divide-y divide-gray-200">
+                        <tr class="bg-gray-50">
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-navy">0</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm text-navy font-semibold">Readiness Diagnostic</td>
+                            <td class="px-3 py-4 text-sm text-slate">You see how your management layer is built, and where it needs shaping and strengthening, before you commit to anything.</td>
+                        </tr>
+                        <tr>
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-navy">1</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-slate">The Shift</td>
+                            <td class="px-3 py-4 text-sm text-slate">They begin to realise their potential and start leading.</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-navy">2</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-slate">Clarity</td>
+                            <td class="px-3 py-4 text-sm text-slate">They work with direction and develop foresight on issues, problems, and ultimately opportunities.</td>
+                        </tr>
+                        <tr>
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-navy">3</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-slate">Direction</td>
+                            <td class="px-3 py-4 text-sm text-slate">Effort goes to what moves the business, with goals set against competition, advantage and market timing.</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-navy">4</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-slate">Self</td>
+                            <td class="px-3 py-4 text-sm text-slate">They take the initiative on decisions. They hold steady under pressure and look for solutions independently.</td>
+                        </tr>
+                        <tr>
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-navy">5</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-slate">Team & Performance</td>
+                            <td class="px-3 py-4 text-sm text-slate">They develop their people. A layer of talent forms below them.</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-navy">6</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-slate">Leadership Discovery</td>
+                            <td class="px-3 py-4 text-sm text-slate">They articulate how they lead and where they are growing. <br><span class="text-navy font-semibold">Deliverable:</span> Personal Leadership Profile.</td>
+                        </tr>
+                        <tr>
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-navy">7</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm font-medium text-slate">The Situation Room</td>
+                            <td class="px-3 py-4 text-sm text-slate">They solve a live business challenge with our input. <br><span class="text-navy font-semibold">Deliverable:</span> a decision and a 90-day plan.</td>
+                        </tr>
+                        <tr class="bg-navy text-white">
+                            <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-bold text-gold">+90d</td>
+                            <td class="whitespace-nowrap px-3 py-4 text-sm font-bold">Proof</td>
+                            <td class="px-3 py-4 text-sm font-light">Their superior answers three questions before and after the cohort, alongside a re-diagnostic. You receive a one-page movement report.</td>
+                        </tr>
+                    </tdbody>
+                </table>
+            </div>
+
+            <!-- Why Design Works -->
+            <h3 class="font-serif text-2xl text-navy font-bold mb-6">Why the design works</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-sm text-slate">
+                <div class="flex items-start">
+                    <div class="text-gold mr-3 mt-1">✦</div>
+                    <p><strong>Practice before theory.</strong> Each week opens with a real problem from their own work. The framework is the tool that solves it.</p>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-gold mr-3 mt-1">✦</div>
+                    <p><strong>The spacing effect.</strong> Learning distributed across seven weeks is retained far better than content massed into two days.</p>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-gold mr-3 mt-1">✦</div>
+                    <p><strong>High Application Ratio.</strong> More than 40% of hours are spent applying, not listening—the strongest predictor of behaviour change.</p>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-gold mr-3 mt-1">✦</div>
+                    <p><strong>The Weekly Question.</strong> Managers answer one leadership question by email between sessions. Responses return anonymously with commentary.</p>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-gold mr-3 mt-1">✦</div>
+                    <p><strong>Cohort of 12.</strong> Every manager speaks, brings their own situations, and receives two hours of one-to-one time.</p>
+                </div>
+                <div class="flex items-start">
+                    <div class="text-gold mr-3 mt-1">✦</div>
+                    <p><strong>Manager Involvement.</strong> Their own manager is involved at the start, at Week 7, and at 90 days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PANEL 4: BACK COVER & CTA -->
+    <section class="panel bg-navy text-white relative shadow-xl mx-auto max-w-4xl p-12 lg:p-20 flex flex-col justify-between">
+        <!-- Subtle Background Grid -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#C5A880 1px, transparent 1px); background-size: 40px 40px;"></div>
+        
+        <div class="relative z-10 flex-grow flex flex-col justify-center items-center text-center">
+            <!-- Compass / Arrow Icon -->
+            <svg class="w-16 h-16 text-gold mb-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+            
+            <h4 class="text-gold tracking-[0.2em] uppercase text-sm font-semibold mb-4">Start Here</h4>
+            <h2 class="font-serif text-4xl md:text-5xl font-bold mb-8 max-w-2xl leading-tight">
+                Know the strength of your leadership core.
+            </h2>
+            <p class="text-gray-300 text-lg max-w-2xl font-light mb-12">
+                The Readiness Diagnostic takes each manager fifteen minutes. You receive the pattern across the group and where development will bring the most return and value.
+            </p>
+            
+            <a href="https://thegreatmanager.com" class="inline-block bg-gold text-navy font-bold uppercase tracking-wider py-4 px-10 rounded hover:bg-white transition duration-300">
+                Begin the Diagnostic
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="relative z-10 border-t border-gray-700 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+            <div class="mb-4 md:mb-0 text-center md:text-left">
+                <p class="text-white font-semibold text-sm mb-1">Andrew WH</p>
+                <a href="https://thegreatmanager.com" class="hover:text-gold transition">thegreatmanager.com</a>
+            </div>
+            <div class="max-w-xl text-center md:text-right text-[10px] leading-relaxed">
+                BC x 3C, WAR MAP, TGMP Thinking Method CGI GOAL, The Build Loop, Think Further, Lead Different and What Matters are proprietary frameworks of Fountaincove Sdn Bhd. SBI was developed at the Center for Creative Leadership and is taught with attribution. Contact hours and claimability subject to the current HRD Corp Allowable Cost Matrix.
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
